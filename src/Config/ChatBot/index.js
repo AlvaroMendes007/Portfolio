@@ -14,6 +14,11 @@ const repositorios = [
     }
 ]
 
+const optionsChat = [
+    { value: repositorios[0].url, label: repositorios[0].name, trigger: '4' },
+    { value: repositorios[1].url, label: repositorios[1].name, trigger: '4' }
+]
+
 const steps = [
     {
         id: '1',
@@ -27,11 +32,7 @@ const steps = [
     },
     {
         id: '3',
-        options: [                        
-            repositorios.map((props)=>{
-                return { value: props.name, label: props.name, trigger: '4' } + ","
-            })
-        ],
+        options: optionsChat
     },
     {
         id: '4',
@@ -43,7 +44,7 @@ const steps = [
 function Chat() {
 
     function handleEnd({values}){
-       console.log(values[0]);
+       
     }
 
     return (
@@ -51,7 +52,7 @@ function Chat() {
             handleEnd = {handleEnd}
             steps={steps}
         />
-    )
+    ) 
 }
 
 export default Chat;
