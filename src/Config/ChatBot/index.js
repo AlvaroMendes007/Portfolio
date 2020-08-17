@@ -1,32 +1,29 @@
-import React, { useState } from 'react';
-import ChatBot from 'react-simple-chatbot';
-import styled from 'styled-components';
+import React, { useState } from './node_modules/react';
+import ChatBot from './node_modules/react-simple-chatbot';
+import styled from './node_modules/styled-components';
+import { Repositorios } from '../../data';
 
 const Main = styled.div`
     display: grid;
     grid-template-columns: 1fr 3fr;
+
+    @media(max-width: 650px){
+        height: 100%; 
+        display: block;
+
+        iframe{
+            height: 600px;
+        }
+    }
 `
 
 const Iframe = styled.iframe`
     border-radius: 10px;
 `
 
-const repositorios = [
-    {
-        id: '1',
-        name: 'Previsão do tempo',
-        url: 'https://weather-woad.vercel.app/',
-    },
-    {
-        id: '2',
-        name: 'MendesFlix',
-        url: 'https://mendesflix.vercel.app'
-    }
-]
-
 const optionsChat = [
-    { value: repositorios[0].url, label: repositorios[0].name, trigger: '4' },
-    { value: repositorios[1].url, label: repositorios[1].name, trigger: '4' }
+    { value: Repositorios[0].url, label: Repositorios[0].name, trigger: '4' },
+    { value: Repositorios[1].url, label: Repositorios[1].name, trigger: '4' }
 ]
 
 const steps = [
@@ -79,12 +76,11 @@ function Chat() {
                     title={url}
                     width="100%"
                     allowfullscreen="allowfullscreen"
-                /> :
+                />:
                 <>
                 </>
             }
         </Main>
-
     )
 }
 
