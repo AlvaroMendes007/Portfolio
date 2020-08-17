@@ -1,6 +1,6 @@
-import React, { useState } from './node_modules/react';
-import ChatBot from './node_modules/react-simple-chatbot';
-import styled from './node_modules/styled-components';
+import React, {useState} from 'react';
+import styled from 'styled-components';
+import ChatBot from 'react-simple-chatbot';
 import { Repositorios } from '../../data';
 
 const Main = styled.div`
