@@ -23,7 +23,8 @@ const Iframe = styled.iframe`
 
 const optionsChat = [
     { value: Repositorios[0].url, label: Repositorios[0].name, trigger: '4' },
-    { value: Repositorios[1].url, label: Repositorios[1].name, trigger: '4' }
+    { value: Repositorios[1].url, label: Repositorios[1].name, trigger: '4' },
+    { value: Repositorios[2].url, label: Repositorios[2].name, trigger: '4' }
 ]
 
 const steps = [

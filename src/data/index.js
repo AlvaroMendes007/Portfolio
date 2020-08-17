@@ -8,5 +8,10 @@ export const Repositorios = [
         id: '2',
         name: 'MendesFlix',
         url: 'https://mendesflix.vercel.app'
+    },
+    {
+        id: '3',
+        name: 'Snake Game',
+        url: 'https://snake-game-delta.vercel.app'
     }
 ]
