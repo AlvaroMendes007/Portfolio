@@ -4,17 +4,8 @@ import ChatBot from 'react-simple-chatbot';
 import { Repositorios } from '../../data';
 
 const Main = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
 
-    @media(max-width: 650px){
-        height: 100%; 
-        display: block;
-
-        iframe{
-            height: 600px;
-        }
-    }
 `
 
 const Iframe = styled.iframe`
@@ -24,7 +15,11 @@ const Iframe = styled.iframe`
 const optionsChat = [
     { value: Repositorios[0].url, label: Repositorios[0].name, trigger: '4' },
     { value: Repositorios[1].url, label: Repositorios[1].name, trigger: '4' },
-    { value: Repositorios[2].url, label: Repositorios[2].name, trigger: '4' }
+    { value: Repositorios[2].url, label: Repositorios[2].name, trigger: '4' },
+    { value: Repositorios[3].url, label: Repositorios[3].name, trigger: '4' },
+    { value: Repositorios[4].url, label: Repositorios[4].name, trigger: '4' },
+    { value: Repositorios[5].url, label: Repositorios[5].name, trigger: '4' },
+    { value: Repositorios[6].url, label: Repositorios[6].name, trigger: '4' }
 ]
 
 const steps = [

@@ -13,5 +13,25 @@ export const Repositorios = [
         id: '3',
         name: 'Snake Game',
         url: 'https://snake-game-delta.vercel.app'
+    },
+    {
+        id: '4',
+        name: 'Wakanda SVG',
+        url: 'https://wakanda.alvaromendes007.vercel.app/'
+    },
+    {
+        id: '5',
+        name: 'Dino Game',
+        url: 'https://dino-game-ten.vercel.app/'
+    },
+    {
+        id: '6',
+        name: 'Space Shooter',
+        url: 'https://space-shooter-d5etih32p.vercel.app/'   
+    },
+    {
+        id: '7',
+        name: 'Rick e Morty API',
+        url: 'https://rickmortypage.vercel.app/'
     }
 ]
